@@ -72,7 +72,7 @@ def build_parser():
         help="Kullanılacak algoritma (varsayılan: sha256)",
     )
     verify_parser.add_argument(
-        "--excepted",
+        "--expected",
         required=True,
         help="Beklenen hash değeri",
     )
