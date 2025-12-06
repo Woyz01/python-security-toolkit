@@ -28,6 +28,19 @@ Basit ve anlaşılır bir komut satırı yapısı sunar:
 - `hash` komutu → hash üretir
 - `verify` komutu → hash doğrular
 
+# Port Tarama(scan_ports)
+Belirli bir IP veya domain üzerinden birden fazla portun açık/kapalı durumunu test eder.
+
+Kullanımı ise şu şekildedir;
+- python src/main.py scan_ports --host 127.0.0.1 --ports 80 443          // --host hedef IP veya domain, --ports Birden fazla port numarası
+
+Örnek çıktısı ise şöyledir;
+
+Host: 127.0.0.1    
+Port 80: KAPALI
+Port 443: KAPALI
+
+
 ---
 
 # Kurulum
