@@ -40,6 +40,16 @@ Host: 127.0.0.1
 Port 80: KAPALI
 Port 443: KAPALI
 
+Mantık şu şekildedir aslında ;
+
+- socket ile hedef IP:port bağlantısı dener
+
+- connect_ex sonucu üzerinden portun açık olup olmadığını belirler
+
+- Sonuçları {port: True/False} sözlüğü olarak döndürür
+
+- CLI arayüzü bunu kullanıcıya okunabilir formatta sunar
+
 
 ---
 
