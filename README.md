@@ -119,8 +119,24 @@ python -m venv .venv
 source .venv/bin/activate
 
 
-Gerekirse bağımlılıkları kurun:
+Hash hesaplama;
 
+python src/main.py hash -f test.txt --algo sha256
+
+Hash doğrulama;
+
+python src/main.py verify -f test.txt --algo sha256 --excepted a3f2b1c9e7...
+
+Port tarama:
+
+python src/main.py scan_ports --host 127.0.0.1 --ports 80 443
+
+Dosya izleme;
+
+python src/main.py watch-file -f watchme.txt --algo sha256 --interval 
+
+
+Gerekirse bağımlılıkları kurun:
 
 pip install -r requirements.txt
 
